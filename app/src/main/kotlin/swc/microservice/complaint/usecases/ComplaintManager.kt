@@ -7,7 +7,7 @@ interface ComplaintManager {
 
     fun createComplaint(complaint: Complaint): String
 
-    fun deleteComplaint(complaintId: String): Complaint
+    fun deleteComplaint(complaintId: String): Complaint?
 
-    fun closeComplaint(complaintId: String): Complaint
+    fun closeComplaint(complaintId: String): Complaint?
 }

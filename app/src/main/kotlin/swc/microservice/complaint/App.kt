@@ -4,10 +4,6 @@
 package swc.microservice.complaint
 
 import swc.microservice.complaint.drivers.DatabaseManager
-import swc.microservice.complaint.entities.Complaint
-import swc.microservice.complaint.entities.ComplaintStatus
-import swc.microservice.complaint.entities.Issuer
-import swc.microservice.complaint.usecases.createComplaint
 
 class App {
     val greeting: String
@@ -19,5 +15,4 @@ class App {
 fun main() {
     println(App().greeting)
     val dbManager = DatabaseManager()
-    createComplaint(Complaint("", "", "", Issuer.USER, "", ComplaintStatus.OPEN), dbManager)
 }
