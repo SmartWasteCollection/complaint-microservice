@@ -24,6 +24,7 @@ class DatabaseManager : ComplaintManager {
     }
 
     override fun createComplaint(complaint: Complaint): String {
+
         val obj: BsonDocument = BsonDocument(
             listOf(
                 BsonElement("id", BsonString("0")),
