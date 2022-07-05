@@ -3,8 +3,6 @@
  */
 package swc.microservice.complaint
 
-import swc.microservice.complaint.drivers.DatabaseManager
-
 class App {
     val greeting: String
         get() {
@@ -14,5 +12,4 @@ class App {
 
 fun main() {
     println(App().greeting)
-    val dbManager = DatabaseManager()
 }
