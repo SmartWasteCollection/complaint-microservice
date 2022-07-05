@@ -23,7 +23,7 @@ class DatabaseManager : ComplaintManager {
         TODO()
     }
 
-    override fun createComplaint(complaint: Complaint) {
+    override fun createComplaint(complaint: Complaint): String {
         val obj: BsonDocument = BsonDocument(
             listOf(
                 BsonElement("id", BsonString("0")),
@@ -35,6 +35,7 @@ class DatabaseManager : ComplaintManager {
             )
         )
         this.collection.insertOne(obj)
+        return "id"
     }
 
     override fun deleteComplaint(complaintId: String): Nothing {
