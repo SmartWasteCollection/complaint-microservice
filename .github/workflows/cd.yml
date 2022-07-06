@@ -38,5 +38,9 @@ jobs:
           echo $CR_PAT | docker login ghcr.io -u SmartWasteCollection --password-stdin
       - name: Build Docker Image
         run: docker build -t complaint-microservice .
+      - name: Tag Docker Image
+        run: |
+          export TAG=ghcr.io/swc/complaint-microservice:${{ steps.getTag.outputs.tagVersion }}
+          docker tag complaint-microservice $TAG
       - name: Push Docker Image
-        run: docker push ghcr.io/swc/complaint-microservice:${{ steps.getTag.outputs.tagVersion }}
+        run: docker push $TAG
