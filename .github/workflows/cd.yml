@@ -44,4 +44,4 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}:${{ steps.getTag.outputs.tagVersion }}
+          tags: ghcr.io/swc/complaint-microservice:${{ steps.getTag.outputs.tagVersion }}
