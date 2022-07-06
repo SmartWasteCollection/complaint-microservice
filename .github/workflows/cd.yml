@@ -39,4 +39,4 @@ jobs:
       - name: Build Docker Image
         run: docker build -t complaint-microservice .
       - name: Push Docker Image
-        run: docker push ghcr.io/SmartWasteCollection/complaint-microservice:${{ steps.getTag.outputs.tagVersion }}
+        run: docker push ghcr.io/swc/complaint-microservice:${{ steps.getTag.outputs.tagVersion }}
