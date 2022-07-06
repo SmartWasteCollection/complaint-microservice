@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.3...v1.0.4) (2022-07-06)
+
+
+### Bug Fixes
+
+* **ci:** change registry username ([1280682](https://github.com/SmartWasteCollection/complaint-microservice/commit/12806820e6c7fbbcf627c06c7669b071e6e345e0))
+
 ## [1.0.3](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.2...v1.0.3) (2022-07-06)
 
 
