@@ -1,5 +1,6 @@
 package swc.microservice.complaint.drivers.database
 
+import io.github.cdimascio.dotenv.dotenv
 import io.kotest.core.spec.style.FreeSpec
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
@@ -8,7 +9,10 @@ import swc.microservice.complaint.entities.ComplaintStatus
 import swc.microservice.complaint.entities.Issuer
 
 class DatabaseManagerTest : FreeSpec({
-    val manager = DatabaseManager(databaseName = "swc-test")
+    val dotenv = dotenv {
+        ignoreIfMissing = true
+    }
+    val manager = DatabaseManager(connectionString = dotenv["MONGO_CONNECTION_STRING"], databaseName = "swc-test")
     val complaint = Complaint("myId", "myOwnerId", "myTitle", Issuer.USER, "myMessage")
     val otherComplaint = Complaint("otherId", "otherOwnerId", "otherTitle", Issuer.DUMPSTER, "otherMessage")
 
