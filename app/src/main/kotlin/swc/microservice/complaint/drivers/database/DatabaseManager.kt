@@ -2,6 +2,7 @@ package swc.microservice.complaint.drivers.database
 
 import com.mongodb.ConnectionString
 import com.mongodb.client.MongoCollection
+import io.github.cdimascio.dotenv.dotenv
 import org.litote.kmongo.KMongo
 import org.litote.kmongo.eq
 import org.litote.kmongo.getCollectionOfName
@@ -14,7 +15,10 @@ import swc.microservice.complaint.entities.ComplaintStatus
 import swc.microservice.complaint.usecases.ComplaintManager
 
 private object DatabaseConstants {
-    const val CONNECTION_STRING: String = "mongodb://localhost"
+    val dotenv = dotenv {
+        ignoreIfMissing = true
+    }
+    val CONNECTION_STRING: String = dotenv["MONGO_CONNECTION_STRING"]
     const val DATABASE: String = "smart-waste-collection"
     const val COLLECTION: String = "complaints"
 }
@@ -27,7 +31,7 @@ class DatabaseManager(
     private val collection: MongoCollection<Complaint>
 
     init {
-        val mongoClient = KMongo.createClient(ConnectionString(connectionString))
+        val mongoClient = KMongo.createClient(ConnectionString(this.connectionString))
         val database = mongoClient.getDatabase(this.databaseName)
         this.collection = database.getCollectionOfName(this.collectionName)
     }
