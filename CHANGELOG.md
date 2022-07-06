@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.1...v1.0.2) (2022-07-06)
+
+
+### Bug Fixes
+
+* **ci:** tag docker image ([2645058](https://github.com/SmartWasteCollection/complaint-microservice/commit/2645058c8e19fa857baf39ffeac2d4bc71ab7edf))
+
 ## [1.0.1](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.0...v1.0.1) (2022-07-06)
 
 
