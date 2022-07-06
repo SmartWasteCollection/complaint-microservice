@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.2...v1.0.3) (2022-07-06)
+
+
+### Bug Fixes
+
+* **ci:** remove env variable ([7862437](https://github.com/SmartWasteCollection/complaint-microservice/commit/78624375fb5300d13739465a222f21eedd97b03e))
+
 ## [1.0.2](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.1...v1.0.2) (2022-07-06)
 
 
