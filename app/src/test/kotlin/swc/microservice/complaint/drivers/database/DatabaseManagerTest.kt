@@ -8,7 +8,7 @@ import swc.microservice.complaint.entities.ComplaintStatus
 import swc.microservice.complaint.entities.Issuer
 
 class DatabaseManagerTest : FreeSpec({
-    val manager = DatabaseManager(databaseName = "swc-test")
+    val manager = DatabaseManager(databaseName = "swc-test-${System.currentTimeMillis()}")
     val complaint = Complaint("myId", "myOwnerId", "myTitle", Issuer.USER, "myMessage")
     val otherComplaint = Complaint("otherId", "otherOwnerId", "otherTitle", Issuer.DUMPSTER, "otherMessage")
 
