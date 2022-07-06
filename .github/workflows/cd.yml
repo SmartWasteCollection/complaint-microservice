@@ -12,7 +12,7 @@ on:
 
 jobs:
   build-and-test:
-    uses: ./github/workflows/ci.yml
+    uses: ./.github/workflows/ci.yml
     secrets: inherit
   delivery:
     needs:
