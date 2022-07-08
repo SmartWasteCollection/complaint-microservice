@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.4...v1.0.5) (2022-07-08)
+
+
+### Bug Fixes
+
+* drop one shot databases when done testing ([6c590cc](https://github.com/SmartWasteCollection/complaint-microservice/commit/6c590cc8019798e7ccb7a4f2533171e72ed48a25))
+
 ## [1.0.4](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.3...v1.0.4) (2022-07-06)
 
 
