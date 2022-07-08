@@ -8,7 +8,8 @@ import swc.microservice.complaint.entities.ComplaintStatus
 import swc.microservice.complaint.entities.Issuer
 
 class DatabaseManagerTest : FreeSpec({
-    val manager = DatabaseManager(databaseName = "swc-test-${System.currentTimeMillis()}")
+    val databaseName = "swc-test-${System.currentTimeMillis()}"
+    val manager = DatabaseManager(databaseName = databaseName)
     val complaint = Complaint("myId", "myOwnerId", "myTitle", Issuer.USER, "myMessage")
     val otherComplaint = Complaint("otherId", "otherOwnerId", "otherTitle", Issuer.DUMPSTER, "otherMessage")
 
@@ -44,6 +45,8 @@ class DatabaseManagerTest : FreeSpec({
                 complaints = manager.getAllComplaints()
                 complaints.find { it.id == otherComplaint.id } shouldBe null
                 complaints.size shouldBe 0
+
+                manager.deleteDatabase(databaseName)
             }
         }
     }

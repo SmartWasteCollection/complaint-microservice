@@ -1,6 +1,7 @@
 package swc.microservice.complaint.drivers.database
 
 import com.mongodb.ConnectionString
+import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoCollection
 import io.github.cdimascio.dotenv.dotenv
 import org.litote.kmongo.KMongo
@@ -28,13 +29,9 @@ class DatabaseManager(
     private val databaseName: String = DATABASE,
     private val collectionName: String = COLLECTION
 ) : ComplaintManager {
-    private val collection: MongoCollection<Complaint>
-
-    init {
-        val mongoClient = KMongo.createClient(ConnectionString(this.connectionString))
-        val database = mongoClient.getDatabase(this.databaseName)
-        this.collection = database.getCollectionOfName(this.collectionName)
-    }
+    private val client: MongoClient = KMongo.createClient(ConnectionString(this.connectionString))
+    private val collection: MongoCollection<Complaint> =
+        client.getDatabase(this.databaseName).getCollectionOfName(this.collectionName)
 
     override fun getAllComplaints(): List<Complaint> =
         this.collection.find().toList()
@@ -52,5 +49,9 @@ class DatabaseManager(
     override fun closeComplaint(complaintId: String): Complaint? {
         this.collection.updateOne(Complaint::id eq complaintId, setValue(Complaint::status, ComplaintStatus.CLOSED))
         return this.collection.find(Complaint::id eq complaintId).first()
+    }
+
+    fun deleteDatabase(databaseName: String) {
+        this.client.getDatabase(databaseName).drop()
     }
 }
