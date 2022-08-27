@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.9...v1.0.10) (2022-08-27)
+
+
+### Bug Fixes
+
+* add cross origin annotation ([a32f205](https://github.com/SmartWasteCollection/complaint-microservice/commit/a32f205cdc2285d906ef0d9e5563f53a507ae755))
+
 ## [1.0.9](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.8...v1.0.9) (2022-08-18)
 
 
