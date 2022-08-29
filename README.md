@@ -17,3 +17,7 @@ To run this microservice you can get the system's latest container image:
 ```
 $ docker run -p <port>:8080 -e MONGO_CONNECTION_STRING=<connection-string> ghcr.io/smartwastecollection/complaint-microservice:<latestVersion>
 ```
+
+---
+
+You can find the _Swagger_ API of the microservice [here](https://app.swaggerhub.com/apis/ALESSANDROMARCANTONI/complaint-microservice/1.0.0-oas3)
