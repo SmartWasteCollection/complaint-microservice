@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.14...v1.0.15) (2022-10-20)
+
+
+### Bug Fixes
+
+* **deps:** update spring boot to v2.7.5 ([a9e74c1](https://github.com/SmartWasteCollection/complaint-microservice/commit/a9e74c1e594330692e637df53e990a686bb4b064))
+
 ## [1.0.14](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.13...v1.0.14) (2022-10-10)
 
 
