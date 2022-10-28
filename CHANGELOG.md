@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.17...v1.0.18) (2022-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.litote.kmongo:kmongo to v4.7.2 ([cfb31ac](https://github.com/SmartWasteCollection/complaint-microservice/commit/cfb31ac688d2d55e3b35c24af777ae5df5853e75))
+
 ## [1.0.17](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.16...v1.0.17) (2022-10-28)
 
 
