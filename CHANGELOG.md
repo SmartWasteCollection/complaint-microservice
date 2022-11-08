@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.18...v1.0.19) (2022-11-08)
+
+
+### Bug Fixes
+
+* **deps:** update kotestversion to v5.5.4 ([d41e1f8](https://github.com/SmartWasteCollection/complaint-microservice/commit/d41e1f88371d1b3293026ae26d161fe689285bac))
+
 ## [1.0.18](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.17...v1.0.18) (2022-10-28)
 
 
