@@ -1,3 +1,10 @@
+## [1.0.20](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.19...v1.0.20) (2022-11-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.github.cdimascio:dotenv-kotlin to v6.4.0 ([8f15077](https://github.com/SmartWasteCollection/complaint-microservice/commit/8f15077dff8d80b4c85894f2cc69e2e23208e624))
+
 ## [1.0.19](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.18...v1.0.19) (2022-11-08)
 
 
