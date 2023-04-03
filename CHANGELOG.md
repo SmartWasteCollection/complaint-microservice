@@ -1,3 +1,10 @@
+## [1.0.31](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.30...v1.0.31) (2023-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency jacoco to v0.8.9 ([7e4d804](https://github.com/SmartWasteCollection/complaint-microservice/commit/7e4d80485fc8a395acf1dd3c366d431bc1aea803))
+
 ## [1.0.30](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.29...v1.0.30) (2023-03-23)
 
 
