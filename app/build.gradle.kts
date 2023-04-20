@@ -2,7 +2,7 @@ plugins {
     id("org.jetbrains.kotlin.jvm") version "1.8.20"
     id("org.jlleitschuh.gradle.ktlint") version "11.3.1"
     id("org.jlleitschuh.gradle.ktlint-idea") version "11.3.1"
-    id("org.springframework.boot") version "3.0.5"
+    id("org.springframework.boot") version "3.0.6"
     jacoco
     application
 }
@@ -19,7 +19,7 @@ dependencies {
     implementation("com.google.guava:guava:31.1-jre")
     implementation("org.litote.kmongo:kmongo:4.9.0")
     implementation("io.github.cdimascio:dotenv-kotlin:6.4.1")
-    implementation("org.springframework.boot:spring-boot-starter-web:3.0.5")
+    implementation("org.springframework.boot:spring-boot-starter-web:3.0.6")
     testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core:$kotestVersion")
     testImplementation("io.kotest:kotest-property:$kotestVersion")
