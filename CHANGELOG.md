@@ -1,3 +1,10 @@
+## [1.0.41](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.40...v1.0.41) (2023-06-22)
+
+
+### Bug Fixes
+
+* **deps:** update spring boot to v3.1.1 ([f83ff1a](https://github.com/SmartWasteCollection/complaint-microservice/commit/f83ff1a40033796acb2d09155c3127ce4c366500))
+
 ## [1.0.40](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.39...v1.0.40) (2023-06-09)
 
 
