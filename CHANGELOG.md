@@ -1,3 +1,10 @@
+## [1.0.46](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.45...v1.0.46) (2023-08-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.guava:guava to v32.1.2-jre ([2787e79](https://github.com/SmartWasteCollection/complaint-microservice/commit/2787e79b5af627ca66be045c5a0ae4efd6b49400))
+
 ## [1.0.45](https://github.com/SmartWasteCollection/complaint-microservice/compare/v1.0.44...v1.0.45) (2023-07-24)
 
 
