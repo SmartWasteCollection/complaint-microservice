@@ -41,7 +41,7 @@ jobs:
       - name: Generate jacoco report
         run: ./gradlew jacocoTestReport
       - name: Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         if: ${{ matrix.java_version == 17 }}
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
